@@ -30,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("global constant initialized")
             return 24
         }()
+        print("test if this is the test branch")
         print(foo)
         print(Cat().defaultName)
         

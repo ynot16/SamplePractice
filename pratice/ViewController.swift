@@ -13,6 +13,8 @@ class People {
     private(set) var name: String = " "
     var pet: Dog? = nil
     
+    
+    
     deinit{
         
         print("People deinit")
