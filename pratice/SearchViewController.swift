@@ -42,7 +42,6 @@ class SearchViewController: UIViewController, UISearchDisplayDelegate, UITableVi
         
 
         
-        
         self.searchDisplayController?.delegate = self
         self.searchDisplayController?.searchResultsDataSource = self
         self.searchDisplayController?.searchResultsDelegate = self

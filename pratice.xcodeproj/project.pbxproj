@@ -39,8 +39,6 @@
 		7C1E56801CC8852B00336C12 /* input_pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C1E567F1CC8852B00336C12 /* input_pdf.pdf */; };
 		7C2705F21CA37D720071947F /* YnotTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2705F11CA37D720071947F /* YnotTestView.swift */; };
 		7C2705F41CA37D8A0071947F /* YnotTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C2705F31CA37D8A0071947F /* YnotTestView.xib */; };
-		7C29E7811CCDF21F00ED7B0F /* YnotFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C29E7801CCDF21F00ED7B0F /* YnotFramework.framework */; };
-		7C29E7831CCDF22500ED7B0F /* YnotFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C29E7801CCDF21F00ED7B0F /* YnotFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7C2B35A61C7F2B8100765985 /* CurriedFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2B35A51C7F2B8100765985 /* CurriedFunctionViewController.swift */; };
 		7C2B35A81C7F2B9B00765985 /* CurriedFuntion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C2B35A71C7F2B9B00765985 /* CurriedFuntion.storyboard */; };
 		7C2D6F3F1C95199400F967DC /* SequenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2D6F3E1C95199400F967DC /* SequenceViewController.swift */; };
@@ -176,7 +174,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7C29E7831CCDF22500ED7B0F /* YnotFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,7 +221,6 @@
 		7C1F8BDD1CC7BDD0001478BA /* 禹卫书法隶书简体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "禹卫书法隶书简体.ttf"; sourceTree = "<group>"; };
 		7C2705F11CA37D720071947F /* YnotTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YnotTestView.swift; sourceTree = "<group>"; };
 		7C2705F31CA37D8A0071947F /* YnotTestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YnotTestView.xib; sourceTree = "<group>"; };
-		7C29E7801CCDF21F00ED7B0F /* YnotFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YnotFramework.framework; sourceTree = "<group>"; };
 		7C2B35A51C7F2B8100765985 /* CurriedFunctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurriedFunctionViewController.swift; sourceTree = "<group>"; };
 		7C2B35A71C7F2B9B00765985 /* CurriedFuntion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CurriedFuntion.storyboard; sourceTree = "<group>"; };
 		7C2D6F3E1C95199400F967DC /* SequenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceViewController.swift; sourceTree = "<group>"; };
@@ -277,7 +273,6 @@
 			files = (
 				7CDF01E11C969B3E00227ED0 /* libc++.tbd in Frameworks */,
 				7C1AF9801C92A5D0001542A5 /* MediaPlayer.framework in Frameworks */,
-				7C29E7811CCDF21F00ED7B0F /* YnotFramework.framework in Frameworks */,
 				5F30A4D1F0E5FB5BA2536D0F /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,7 +562,6 @@
 		BE9B275BF510749F239C7121 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7C29E7801CCDF21F00ED7B0F /* YnotFramework.framework */,
 				7CDF01E01C969B3E00227ED0 /* libc++.tbd */,
 				7C1AF97F1C92A5D0001542A5 /* MediaPlayer.framework */,
 				7B4DFA74DB710A049C3CF71E /* Pods.framework */,

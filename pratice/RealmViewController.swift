@@ -32,7 +32,6 @@ class RealmViewController: UIViewController {
         
         let items = realm.objects(ConsumeItem)
         guard items.count <= 0 else {
-            print(realm.path)
             print("there was already something there")
             return
         }
@@ -74,9 +73,6 @@ class RealmViewController: UIViewController {
         }catch {
             print(error)
         }
-        
-        
-        print(realm.path)
         
         // Do any additional setup after loading the view.
     }

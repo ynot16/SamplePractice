@@ -11,9 +11,10 @@ import RealmSwift
 
 class ConsumeType: Object {
     var name = " "
-    var owners: [ConsumeItem] {
-        return LinkingObjects(fromType: ConsumeType.self, property: "type")
-    }
+//    var owners: [ConsumeItem] {
+//        return LinkingObjects(fromType: ConsumeType.self, property: "type")
+//    }
+    var owners: [ConsumeItem] = []
 }
 
 class ConsumeItem: Object {
