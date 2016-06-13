@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="C60-lt-bdp">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Layout View Controller-->
+        <scene sceneID="pEo-SK-ec5">
+            <objects>
+                <viewController id="C60-lt-bdp" customClass="LayoutViewController" customModule="pratice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RfV-gr-87I"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ncm-ag-tZ2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="26P-O8-sWM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="see if i move when button click" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giF-x9-RZQ" customClass="TestView" customModule="pratice" customModuleProvider="target">
+                                <rect key="frame" x="20" y="48" width="235" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Wv6-v3-Wue"/>
+                                    <constraint firstAttribute="width" constant="235" id="XtQ-fn-JDh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpB-2S-OAP">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.36434764749999998" green="0.3403682327" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="layoutAction:" destination="C60-lt-bdp" eventType="touchUpInside" id="eXm-vS-lD0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lpB-2S-OAP" firstAttribute="centerY" secondItem="26P-O8-sWM" secondAttribute="centerY" id="10o-1P-NCH"/>
+                            <constraint firstItem="giF-x9-RZQ" firstAttribute="top" secondItem="RfV-gr-87I" secondAttribute="bottom" constant="28" id="dHa-zu-KBm"/>
+                            <constraint firstItem="lpB-2S-OAP" firstAttribute="centerX" secondItem="26P-O8-sWM" secondAttribute="centerX" id="gMC-hZ-HmD"/>
+                            <constraint firstItem="giF-x9-RZQ" firstAttribute="leading" secondItem="26P-O8-sWM" secondAttribute="leading" constant="20" id="ynd-eD-E0F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelLeftConstraint" destination="ynd-eD-E0F" id="aTJ-QX-oV7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8nU-xg-Bla" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463" y="373"/>
+        </scene>
+    </scenes>
+</document>

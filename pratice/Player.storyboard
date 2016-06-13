@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wJw-YG-7xF">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Ynot Player View Controller-->
+        <scene sceneID="GKf-Hw-4xF">
+            <objects>
+                <viewController id="wJw-YG-7xF" customClass="YnotPlayerViewController" customModule="pratice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NKR-pO-Ilc"/>
+                        <viewControllerLayoutGuide type="bottom" id="LAU-hp-tIv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dkJ-R2-BAR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYe-Rm-Ej1" customClass="YnotPlayerView" customModule="pratice" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="337.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fYe-Rm-Ej1" secondAttribute="height" multiplier="16:9" id="QDk-sw-3dC"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="89" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TxH-Iz-ugz">
+                                <rect key="frame" x="0.0" y="373.5" width="600" height="226.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="r7r-8J-zXI">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="89"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r7r-8J-zXI" id="VbI-3P-7Ve">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="88.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ynotcc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHb-xw-pYV">
+                                                    <rect key="frame" x="8" y="34" width="52" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DHb-xw-pYV" firstAttribute="centerY" secondItem="VbI-3P-7Ve" secondAttribute="centerY" id="bMK-Mj-QsI"/>
+                                                <constraint firstItem="DHb-xw-pYV" firstAttribute="leading" secondItem="VbI-3P-7Ve" secondAttribute="leading" constant="8" id="jX3-PX-e3Q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fYe-Rm-Ej1" firstAttribute="top" secondItem="NKR-pO-Ilc" secondAttribute="bottom" constant="8" symbolic="YES" id="FbG-5g-KJK"/>
+                            <constraint firstAttribute="trailing" secondItem="fYe-Rm-Ej1" secondAttribute="trailing" id="RqT-Fe-Fxl"/>
+                            <constraint firstItem="LAU-hp-tIv" firstAttribute="top" secondItem="TxH-Iz-ugz" secondAttribute="bottom" id="TRw-H3-Fqm"/>
+                            <constraint firstItem="TxH-Iz-ugz" firstAttribute="leading" secondItem="dkJ-R2-BAR" secondAttribute="leading" id="Ynb-Wk-Ujs"/>
+                            <constraint firstAttribute="trailing" secondItem="TxH-Iz-ugz" secondAttribute="trailing" id="bNt-UY-kuc"/>
+                            <constraint firstItem="fYe-Rm-Ej1" firstAttribute="leading" secondItem="dkJ-R2-BAR" secondAttribute="leading" id="n6h-ql-2Ck"/>
+                            <constraint firstItem="TxH-Iz-ugz" firstAttribute="top" secondItem="fYe-Rm-Ej1" secondAttribute="bottom" constant="8" symbolic="YES" id="vf8-6U-coH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playerView" destination="fYe-Rm-Ej1" id="snf-lR-46Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NjN-L0-aDm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437" y="296"/>
+        </scene>
+    </scenes>
+</document>

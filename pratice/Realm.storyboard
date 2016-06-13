@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="29x-5Z-4Qx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Realm View Controller-->
+        <scene sceneID="GSm-bO-pbU">
+            <objects>
+                <viewController id="29x-5Z-4Qx" customClass="RealmViewController" customModule="pratice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xc6-SR-ms4"/>
+                        <viewControllerLayoutGuide type="bottom" id="188-CK-HzY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3JR-Lh-9fu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmj-hZ-YOJ">
+                                <rect key="frame" x="283" y="285" width="34" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="8sU-Xm-bdB"/>
+                                </constraints>
+                                <state key="normal" title="jump"/>
+                                <connections>
+                                    <segue destination="kNR-AY-ccG" kind="presentation" id="myX-ER-NpL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6S9-BX-8zd">
+                                <rect key="frame" x="42" y="131" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.36434764749999998" green="0.3403682327" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="29x-5Z-4Qx" eventType="touchUpInside" id="VmH-uH-5JD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vmj-hZ-YOJ" firstAttribute="centerY" secondItem="3JR-Lh-9fu" secondAttribute="centerY" id="R62-8c-4BH"/>
+                            <constraint firstItem="Vmj-hZ-YOJ" firstAttribute="centerX" secondItem="3JR-Lh-9fu" secondAttribute="centerX" id="z2Q-EA-Wts"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonTag" destination="6S9-BX-8zd" id="Krb-pW-ljS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kRp-uZ-gPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="208" y="-11"/>
+        </scene>
+        <!--Realm Table View Controller-->
+        <scene sceneID="rlO-4O-pc4">
+            <objects>
+                <viewController storyboardIdentifier="Table" id="kNR-AY-ccG" customClass="RealmTableViewController" customModule="pratice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TZ0-Nc-LSG"/>
+                        <viewControllerLayoutGuide type="bottom" id="gH1-0a-0fZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xl9-L1-EXz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="136" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S1K-rP-Aek">
+                                <rect key="frame" x="0.0" y="181" width="600" height="419"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Item Cell" rowHeight="136" id="C3E-4M-zWX" customClass="RealmCell" customModule="pratice" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="136"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C3E-4M-zWX" id="3Fs-Si-POQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="135.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZa-Ny-u9e">
+                                                    <rect key="frame" x="28" y="86" width="30" height="30"/>
+                                                    <state key="normal" title="1"/>
+                                                    <connections>
+                                                        <action selector="firstButton:" destination="C3E-4M-zWX" eventType="touchUpInside" id="mKP-Sy-iGf"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="we2-FL-9Eu">
+                                                    <rect key="frame" x="86" y="86" width="30" height="30"/>
+                                                    <state key="normal" title="2"/>
+                                                    <connections>
+                                                        <action selector="secondButton:" destination="C3E-4M-zWX" eventType="touchUpInside" id="dgw-Bh-wd2"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzQ-1N-q4x">
+                                                    <rect key="frame" x="22" y="34" width="259" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Ca0-fV-OEj"/>
+                                                        <constraint firstAttribute="width" constant="259" id="rxF-Ie-Rec"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hzQ-1N-q4x" firstAttribute="top" secondItem="3Fs-Si-POQ" secondAttribute="top" constant="34" id="bRO-Ix-mPE"/>
+                                                <constraint firstItem="hzQ-1N-q4x" firstAttribute="leading" secondItem="3Fs-Si-POQ" secondAttribute="leading" constant="22" id="qdM-3n-AUI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelLeftConstraint" destination="qdM-3n-AUI" id="1f3-fO-vUe"/>
+                                            <outlet property="titleLabe" destination="hzQ-1N-q4x" id="33b-GH-s9b"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="kNR-AY-ccG" id="E6h-my-Qne"/>
+                                    <outlet property="delegate" destination="kNR-AY-ccG" id="X17-Vh-cqv"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxZ-GH-UvF">
+                                <rect key="frame" x="274" y="82" width="52" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="vhC-h8-kix"/>
+                                </constraints>
+                                <state key="normal" title="dismiss"/>
+                                <connections>
+                                    <segue destination="CC5-ju-JvF" kind="unwind" identifier="Dismiss" unwindAction="unwindForSegue:towardsViewController:" id="7Gx-r0-IpN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QxZ-GH-UvF" firstAttribute="top" secondItem="TZ0-Nc-LSG" secondAttribute="bottom" constant="62" id="0sh-Ok-wdh"/>
+                            <constraint firstItem="QxZ-GH-UvF" firstAttribute="centerX" secondItem="xl9-L1-EXz" secondAttribute="centerX" id="OgL-jC-Xip"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mBj-AG-9PN">
+                        <barButtonItem key="rightBarButtonItem" title="quit" id="BUk-AT-3Dp"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="S1K-rP-Aek" id="3xK-Yl-2PC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="03X-hT-gzh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="CC5-ju-JvF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1009" y="-11"/>
+        </scene>
+    </scenes>
+</document>

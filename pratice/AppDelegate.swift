@@ -8,15 +8,73 @@
 
 import UIKit
 
+class Cat {
+    let defaultName: String = {
+        print("Type constant initialized")
+        return "ynotcc"
+    }()
+}
+
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let foo: Int = {
+            print("global constant initialized")
+            return 24
+        }()
+        print(foo)
+        print(Cat().defaultName)
+        
+        
+
+        
+        if let userInfo = launchOptions?[UIApplicationLaunchOptionsRemoteNotificationKey] {
+            print("Receive RemoteNotication, userInfo is \(userInfo)")
+        }
+        
+        regisiterRemoteNotification()
+        
         return true
+    }
+    
+    func regisiterRemoteNotification() {
+        let setting = UIUserNotificationSettings(forTypes: [.Sound, .Alert, .Badge], categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(setting)
+    }
+    
+    func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
+        print("did register user notification settings")
+        if notificationSettings.types != .None {
+            application.registerForRemoteNotifications()
+        }
+    }
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        let tokenChars = UnsafePointer<CChar>(deviceToken.bytes)
+        var tokenString = ""
+        
+        for i in 0..<deviceToken.length {
+            tokenString += String(format: "%02.2hhx", arguments: [tokenChars[i]])
+        }
+        
+        print("Device Token:", tokenString)
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+         print("Receive RemoteNotication, userInfo is \(userInfo)")
+    }
+    
+    
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        print("error: \(error.localizedDescription)")
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -38,9 +96,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(application: UIApplication) {
+        for cmDownload in YnotDownloadManager.sharedInstance.downloadArray {
+            if cmDownload.downloadState == DownloadState.Downloading {
+                dPrint("name = \(cmDownload.identifier) url = \(cmDownload.url) existedData = \(cmDownload.existedData)")
+            }
+        }
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
 
 }
+
+extension NSObject {
+    
+    func dPrint(item: Any) {
+        #if DEBUG
+        print(item)
+        #endif
+    }
+}
+
 
