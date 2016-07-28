@@ -34,6 +34,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print(foo)
         print(Cat().defaultName)
         
+        for fontFamilyName in UIFont.familyNames() {
+            print(UIFont.familyNames().count)
+            print("family name : \(fontFamilyName)")
+            
+            for fontName in UIFont.fontNamesForFamilyName(fontFamilyName) {
+                print("font name : \(fontName)")
+            }
+            print("-----------------")
+        }
+    
         
 
         

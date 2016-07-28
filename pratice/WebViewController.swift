@@ -18,7 +18,7 @@ class WebViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.blueColor()
-        webView = WKWebView(frame: CGRectMake(0, 0, Window.SCREENWIDTH, Window.SCREENHIEGHT), configuration: WKWebViewConfiguration())
+        webView = WKWebView(frame: CGRectMake(100, 100, Window.SCREENWIDTH, Window.SCREENHIEGHT), configuration: WKWebViewConfiguration())
         let url = NSBundle.mainBundle().pathForResource("index", ofType: "html")
         let request = NSURLRequest(URL: NSURL(string: url!)!)
         webView?.loadRequest(request)
@@ -30,6 +30,20 @@ class WebViewController: UIViewController {
         web?.loadRequest(request)
         web?.delegate = self
         view.addSubview(web!)
+        
+        let button = UIButton(frame: CGRectMake(100, 100, 100, 100))
+        button.backgroundColor = UIColor.blueColor()
+//        button.layer.shadowOpacity = 0.5
+//        button.layer.shadowOffset = CGSizeMake(5, 5)
+        button.layer.masksToBounds = true
+        let layer = CALayer()
+        layer.bounds = button.bounds
+        layer.shadowOffset = CGSizeMake(5, 5)
+        layer.shadowOpacity = 0.5
+        view.layer.addSublayer(layer)
+        layer.addSublayer(button.layer)
+//        view.addSubview(button)
+        
         // Do any additional setup after loading the view.
     }
 
