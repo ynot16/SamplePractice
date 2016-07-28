@@ -45,6 +45,8 @@
 		7C330DE31C84175900C019CD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C330DE21C84175900C019CD /* MainViewController.swift */; };
 		7C4E2DEF1C7C342A00F38BFF /* SocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4E2DEE1C7C342A00F38BFF /* SocketViewController.swift */; };
 		7C4F323B1CD1A35B00EC8553 /* AnimationImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F323A1CD1A35B00EC8553 /* AnimationImageViewController.swift */; };
+		7C5EB1CE1D4A34B7002E02EF /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5EB1CD1D4A34B7002E02EF /* AnimationViewController.swift */; };
+		7C5EB1D11D4A34E2002E02EF /* Animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5EB1D01D4A34E2002E02EF /* Animation.storyboard */; };
 		7C74073F1CD8A453004A62F1 /* FPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C74073E1CD8A453004A62F1 /* FPSLabel.swift */; };
 		7C782DD41CB28BDF00287298 /* YnotPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1AF9761C9275D0001542A5 /* YnotPlayerView.swift */; };
 		7C782DD51CB28BDF00287298 /* RealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF01E21C969BAD00227ED0 /* RealmObject.swift */; };
@@ -227,6 +229,8 @@
 		7C330DE21C84175900C019CD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7C4E2DEE1C7C342A00F38BFF /* SocketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketViewController.swift; sourceTree = "<group>"; };
 		7C4F323A1CD1A35B00EC8553 /* AnimationImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationImageViewController.swift; sourceTree = "<group>"; };
+		7C5EB1CD1D4A34B7002E02EF /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		7C5EB1D01D4A34E2002E02EF /* Animation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Animation.storyboard; sourceTree = "<group>"; };
 		7C74073E1CD8A453004A62F1 /* FPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPSLabel.swift; sourceTree = "<group>"; };
 		7C782E1C1CB28BDF00287298 /* praticeBeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = praticeBeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C782E1D1CB28BDF00287298 /* praticeBeta-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "praticeBeta-Info.plist"; path = "/Users/bori-applepc/Desktop/pratice/praticeBeta-Info.plist"; sourceTree = "<absolute>"; };
@@ -335,6 +339,7 @@
 				7C2D6F3E1C95199400F967DC /* SequenceViewController.swift */,
 				7C4F323A1CD1A35B00EC8553 /* AnimationImageViewController.swift */,
 				7C74073E1CD8A453004A62F1 /* FPSLabel.swift */,
+				7C5EB1CF1D4A34BD002E02EF /* Animation */,
 				7CB422621CD8B0660043D9AE /* QuickLook */,
 				7C1E56811CC886DD00336C12 /* PDF */,
 				7CCF4F821CC77AF100D0F6FB /* CustomViewToSB */,
@@ -453,6 +458,15 @@
 				7C4E2DEE1C7C342A00F38BFF /* SocketViewController.swift */,
 			);
 			name = Socket;
+			sourceTree = "<group>";
+		};
+		7C5EB1CF1D4A34BD002E02EF /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				7C5EB1CD1D4A34B7002E02EF /* AnimationViewController.swift */,
+				7C5EB1D01D4A34E2002E02EF /* Animation.storyboard */,
+			);
+			name = Animation;
 			sourceTree = "<group>";
 		};
 		7C83C6E31C914DCE0013FC4B /* Protocol */ = {
@@ -715,6 +729,7 @@
 				7CA41DE71C90044F00F61B82 /* head.png in Resources */,
 				7CDF01B81C96548500227ED0 /* WebView.storyboard in Resources */,
 				7CB422611CD8B0590043D9AE /* QuickLook.storyboard in Resources */,
+				7C5EB1D11D4A34E2002E02EF /* Animation.storyboard in Resources */,
 				7C2B35A81C7F2B9B00765985 /* CurriedFuntion.storyboard in Resources */,
 				7C16E18F1CABD54C0060EAF8 /* Search.storyboard in Resources */,
 				7C1AF97A1C9275E3001542A5 /* YnotPlayerView.xib in Resources */,
@@ -921,6 +936,7 @@
 				7C2705F21CA37D720071947F /* YnotTestView.swift in Sources */,
 				7C4E2DEF1C7C342A00F38BFF /* SocketViewController.swift in Sources */,
 				7C091CA81BCC0653003FCC8F /* AppDelegate.swift in Sources */,
+				7C5EB1CE1D4A34B7002E02EF /* AnimationViewController.swift in Sources */,
 				7CA41DEA1C900A7F00F61B82 /* EmbledTableViewController.swift in Sources */,
 				7C2D6F3F1C95199400F967DC /* SequenceViewController.swift in Sources */,
 			);
