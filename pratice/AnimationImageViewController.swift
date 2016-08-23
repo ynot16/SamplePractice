@@ -34,6 +34,7 @@ class AnimationImageViewController: UIViewController {
         super.viewDidLoad()
 
         view.addSubview(fpsLabel)
+        self.navigationItem
         
         animationImage.startAnimating()
         view.addSubview(animationImage)

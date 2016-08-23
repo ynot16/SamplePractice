@@ -16,7 +16,20 @@
                     <view key="view" contentMode="scaleToFill" id="Cde-gj-ufU">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiK-2f-JIo">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="outletChange:" destination="plo-i3-1Zu" eventType="touchUpInside" id="2LO-JM-9bW"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qiK-2f-JIo" firstAttribute="centerX" secondItem="Cde-gj-ufU" secondAttribute="centerX" id="81j-DZ-zXH"/>
+                            <constraint firstItem="qiK-2f-JIo" firstAttribute="centerY" secondItem="Cde-gj-ufU" secondAttribute="centerY" id="kO6-88-TqC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WAj-ck-ad5" userLabel="First Responder" sceneMemberID="firstResponder"/>
