@@ -8,7 +8,7 @@
 
 
 # 工程名
-APP_NAME="BROnlineLearning"
+APP_NAME="pratice"
 # 证书
 CODE_SIGN_DISTRIBUTION="iPhone Distribution: Guangzhou Bori Information Technology Co., Ltd."
 # info.plist路径

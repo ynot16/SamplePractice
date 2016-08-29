@@ -151,8 +151,6 @@
 		7CDF01E11C969B3E00227ED0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDF01E01C969B3E00227ED0 /* libc++.tbd */; };
 		7CDF01E31C969BAD00227ED0 /* RealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF01E21C969BAD00227ED0 /* RealmObject.swift */; };
 		7CDF01E51C96A37200227ED0 /* RealmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF01E41C96A37200227ED0 /* RealmTableViewController.swift */; };
-		7CE246B51D73E82800BF40DC /* BuildScript.sh in Resources */ = {isa = PBXBuildFile; fileRef = 7CE246B31D73E82800BF40DC /* BuildScript.sh */; };
-		7CE246B61D73E82800BF40DC /* PublishScript.sh in Resources */ = {isa = PBXBuildFile; fileRef = 7CE246B41D73E82800BF40DC /* PublishScript.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -292,8 +290,6 @@
 		7CDF01E01C969B3E00227ED0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		7CDF01E21C969BAD00227ED0 /* RealmObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmObject.swift; sourceTree = "<group>"; };
 		7CDF01E41C96A37200227ED0 /* RealmTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmTableViewController.swift; sourceTree = "<group>"; };
-		7CE246B31D73E82800BF40DC /* BuildScript.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = BuildScript.sh; sourceTree = "<group>"; };
-		7CE246B41D73E82800BF40DC /* PublishScript.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = PublishScript.sh; sourceTree = "<group>"; };
 		EED49B9D01926B6BE0E7F66C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -392,8 +388,6 @@
 				7C091CB31BCC0653003FCC8F /* Info.plist */,
 				7C782E1D1CB28BDF00287298 /* praticeBeta-Info.plist */,
 				7C1F8BDD1CC7BDD0001478BA /* 禹卫书法隶书简体.ttf */,
-				7CE246B31D73E82800BF40DC /* BuildScript.sh */,
-				7CE246B41D73E82800BF40DC /* PublishScript.sh */,
 			);
 			path = pratice;
 			sourceTree = "<group>";
@@ -791,7 +785,6 @@
 				7CB422611CD8B0590043D9AE /* QuickLook.storyboard in Resources */,
 				7C357FBA1D5A2D4500872657 /* docu2.png in Resources */,
 				7C5EB1D11D4A34E2002E02EF /* Animation.storyboard in Resources */,
-				7CE246B61D73E82800BF40DC /* PublishScript.sh in Resources */,
 				7C2B35A81C7F2B9B00765985 /* CurriedFuntion.storyboard in Resources */,
 				7C16E18F1CABD54C0060EAF8 /* Search.storyboard in Resources */,
 				7C16EAAE1D522FB60011F48B /* door.jpg in Resources */,
@@ -812,7 +805,6 @@
 				7C1AF97C1C9275F4001542A5 /* YnotPlayerMaskView.xib in Resources */,
 				7C1AF97E1C9276A5001542A5 /* 150511_JiveBike.mov in Resources */,
 				7C357FB91D5A2D4500872657 /* docu.png in Resources */,
-				7CE246B51D73E82800BF40DC /* BuildScript.sh in Resources */,
 				7CCF4F871CC77B3100D0F6FB /* PDF.storyboard in Resources */,
 				7C15555C1C5CBEDD0048B1FF /* DownloadTableViewCell.xib in Resources */,
 				7C83C6E51C914E0C0013FC4B /* Protocol.storyboard in Resources */,
