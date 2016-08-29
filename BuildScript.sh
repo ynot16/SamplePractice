@@ -26,9 +26,9 @@ echo ${IPA_PATH}
 echo "${IPA_PATH}">> test.txt
 
 echo "=================clean================="
-xcodebuild -workspace "${APP_NAME}.xcworkspace" -scheme "${APP_NAME}" -configuration 'Release' clean
+xcodebuild -workspace "${APP_NAME}.xcworkspace" -scheme "${APP_NAME}"  -configuration 'Release' clean
 
-echo "=================build================="
+echo "+++++++++++++++++build+++++++++++++++++"
 xcodebuild -workspace "${APP_NAME}.xcworkspace" -scheme "${APP_NAME}" -sdk iphoneos -configuration 'Release' CODE_SIGN_IDENTITY="${CODE_SIGN_DISTRIBUTION}" SYMROOT='$(PWD)'
 
-xcrun -sdk iphoneos PackageAPPlication "./Release-iphoneos/${APP_NAME}.app" -o ~/"${IPANAME}"
+xcrun -sdk iphoneos PackageApplication "./Release-iphoneos/${APP_NAME}.app" -o ~/"${IPANAME}"
