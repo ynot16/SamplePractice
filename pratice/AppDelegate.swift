@@ -45,13 +45,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     
         
-
         
         if let userInfo = launchOptions?[UIApplicationLaunchOptionsRemoteNotificationKey] {
             print("Receive RemoteNotication, userInfo is \(userInfo)")
         }
         
         regisiterRemoteNotification()
+        
         
         return true
     }
