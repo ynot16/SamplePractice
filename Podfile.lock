@@ -1,0 +1,22 @@
+PODS:
+  - HYBSnapkitAutoCellHeight (2.0.0):
+    - SnapKit (~> 0.18)
+  - Realm (1.0.0):
+    - Realm/Headers (= 1.0.0)
+  - Realm/Headers (1.0.0)
+  - RealmSwift (1.0.0):
+    - Realm (= 1.0.0)
+  - SnapKit (0.18.0)
+
+DEPENDENCIES:
+  - HYBSnapkitAutoCellHeight (~> 2.0.0)
+  - RealmSwift (~> 1.0.0)
+  - SnapKit (~> 0.18.0)
+
+SPEC CHECKSUMS:
+  HYBSnapkitAutoCellHeight: a0dccfa71a986d6ce745eed96291a629c3d91cbd
+  Realm: e15cd8e7c11d3e576f628ba0b7cb855269b4991c
+  RealmSwift: 3229306d020d96f83b335f87a0dcbf2cef0e6a2b
+  SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
+
+COCOAPODS: 0.39.0
