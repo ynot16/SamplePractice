@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6B3-E5-Jgz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XzS-Se-iQ5">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -73,12 +73,65 @@
                     <view key="view" contentMode="scaleToFill" id="0ir-R6-0NE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bb-mh-rAm">
+                                <rect key="frame" x="497" y="490" width="44" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="4EQ-cd-UFg"/>
+                                    <constraint firstAttribute="height" constant="30" id="TSF-qu-bkj"/>
+                                </constraints>
+                                <state key="normal" title="triggle"/>
+                                <connections>
+                                    <action selector="triggle:" destination="6B3-E5-Jgz" eventType="touchUpInside" id="gOi-EN-rdL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bRY-bl-Gu0" firstAttribute="top" secondItem="0bb-mh-rAm" secondAttribute="bottom" constant="80" id="M93-1w-oVB"/>
+                            <constraint firstAttribute="trailing" secondItem="0bb-mh-rAm" secondAttribute="trailing" constant="59" id="fVA-gw-GJE"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ey-am-Djm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="3"/>
+            <point key="canvasLocation" x="919" y="50"/>
+        </scene>
+        <!--Dragglable View Controller-->
+        <scene sceneID="lwg-nI-PGY">
+            <objects>
+                <viewController id="h3b-z7-Fpe" customClass="YNTDragglableViewController" customModule="pratice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wBR-on-IkS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mid-lr-vPa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k5c-Ux-PIw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IFb-bB-sdN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1587" y="50"/>
+        </scene>
+        <!--Liquid Loader View Controller-->
+        <scene sceneID="LgG-4a-aIf">
+            <objects>
+                <viewController id="XzS-Se-iQ5" customClass="YNTLiquidLoaderViewController" customModule="pratice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dwJ-U9-pJn"/>
+                        <viewControllerLayoutGuide type="bottom" id="fHJ-MG-Fdc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YqM-uy-V1k">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6lV-a3-Jul" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2288" y="50"/>
         </scene>
     </scenes>
 </document>

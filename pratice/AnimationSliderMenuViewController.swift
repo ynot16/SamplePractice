@@ -11,21 +11,23 @@ import UIKit
 
 class AnimationSliderMenuViewController: UIViewController {
     
-    let menu = YNTSlideMenu(frame: CGRectMake(0, 0, 100, 100))
-
+    var menu: YNTSlideMenu?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.redColor()
+        view.backgroundColor = UIColor.whiteColor()
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        UIApplication.sharedApplication().delegate?.window!!.addSubview(menu)
+        menu = YNTSlideMenu()
     }
     
     override func viewWillLayoutSubviews() {
         
+    }
+    @IBAction func triggle(sender: UIButton) {
+        menu!.triggle()
     }
 }

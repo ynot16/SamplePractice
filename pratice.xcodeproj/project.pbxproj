@@ -57,6 +57,8 @@
 		7C5DC8F01D717D63000BEC13 /* YNTSlideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DC8EF1D717D63000BEC13 /* YNTSlideMenu.swift */; };
 		7C5EB1CE1D4A34B7002E02EF /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5EB1CD1D4A34B7002E02EF /* AnimationViewController.swift */; };
 		7C5EB1D11D4A34E2002E02EF /* Animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5EB1D01D4A34E2002E02EF /* Animation.storyboard */; };
+		7C6E84951D75626A00D75094 /* YNTDragglableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6E84941D75626A00D75094 /* YNTDragglableViewController.swift */; };
+		7C6E84971D75A95500D75094 /* YNTDraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6E84961D75A95500D75094 /* YNTDraggableView.swift */; };
 		7C74073F1CD8A453004A62F1 /* FPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C74073E1CD8A453004A62F1 /* FPSLabel.swift */; };
 		7C782DD41CB28BDF00287298 /* YnotPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1AF9761C9275D0001542A5 /* YnotPlayerView.swift */; };
 		7C782DD51CB28BDF00287298 /* RealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF01E21C969BAD00227ED0 /* RealmObject.swift */; };
@@ -122,6 +124,9 @@
 		7C83C6E71C914E4C0013FC4B /* PresentingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C83C6E61C914E4C0013FC4B /* PresentingViewController.swift */; };
 		7C83C6E91C914E570013FC4B /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C83C6E81C914E570013FC4B /* PresentedViewController.swift */; };
 		7C8C115D1D56E02600B2CFED /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8C115C1D56E02600B2CFED /* star@2x.png */; };
+		7C8C3E531D7724E800814075 /* cute-explode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8C3E521D7724E800814075 /* cute-explode@2x.png */; };
+		7C8C3E551D772C2000814075 /* YNTLiquidLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8C3E541D772C2000814075 /* YNTLiquidLoaderViewController.swift */; };
+		7C8C3E571D772C2E00814075 /* YNTLiquidLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8C3E561D772C2E00814075 /* YNTLiquidLoaderView.swift */; };
 		7CA41DDE1C8FCC0D00F61B82 /* TableViewEmbledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA41DDD1C8FCC0D00F61B82 /* TableViewEmbledViewController.swift */; };
 		7CA41DE01C8FCC5700F61B82 /* TableViewEmbled.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA41DDF1C8FCC5700F61B82 /* TableViewEmbled.storyboard */; };
 		7CA41DE31C8FD3D800F61B82 /* YnotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA41DE21C8FD3D800F61B82 /* YnotModel.swift */; };
@@ -253,6 +258,8 @@
 		7C5DC8EF1D717D63000BEC13 /* YNTSlideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTSlideMenu.swift; sourceTree = "<group>"; };
 		7C5EB1CD1D4A34B7002E02EF /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		7C5EB1D01D4A34E2002E02EF /* Animation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Animation.storyboard; sourceTree = "<group>"; };
+		7C6E84941D75626A00D75094 /* YNTDragglableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTDragglableViewController.swift; sourceTree = "<group>"; };
+		7C6E84961D75A95500D75094 /* YNTDraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTDraggableView.swift; sourceTree = "<group>"; };
 		7C74073E1CD8A453004A62F1 /* FPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPSLabel.swift; sourceTree = "<group>"; };
 		7C782E1C1CB28BDF00287298 /* praticeBeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = praticeBeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C782E1D1CB28BDF00287298 /* praticeBeta-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "praticeBeta-Info.plist"; path = "/Users/bori-applepc/Desktop/pratice/praticeBeta-Info.plist"; sourceTree = "<absolute>"; };
@@ -261,6 +268,9 @@
 		7C83C6E61C914E4C0013FC4B /* PresentingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentingViewController.swift; sourceTree = "<group>"; };
 		7C83C6E81C914E570013FC4B /* PresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
 		7C8C115C1D56E02600B2CFED /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
+		7C8C3E521D7724E800814075 /* cute-explode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cute-explode@2x.png"; sourceTree = "<group>"; };
+		7C8C3E541D772C2000814075 /* YNTLiquidLoaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTLiquidLoaderViewController.swift; sourceTree = "<group>"; };
+		7C8C3E561D772C2E00814075 /* YNTLiquidLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTLiquidLoaderView.swift; sourceTree = "<group>"; };
 		7CA41DDD1C8FCC0D00F61B82 /* TableViewEmbledViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewEmbledViewController.swift; sourceTree = "<group>"; };
 		7CA41DDF1C8FCC5700F61B82 /* TableViewEmbled.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TableViewEmbled.storyboard; sourceTree = "<group>"; };
 		7CA41DE21C8FD3D800F61B82 /* YnotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YnotModel.swift; sourceTree = "<group>"; };
@@ -491,10 +501,15 @@
 		7C5DC8EE1D71773E000BEC13 /* A GUIDE TO IOS ANIMATION */ = {
 			isa = PBXGroup;
 			children = (
+				7C8C3E521D7724E800814075 /* cute-explode@2x.png */,
 				7C5DC8E61D712AA2000BEC13 /* AnimationCircleDemoViewController.swift */,
 				7C5DC8EA1D7134E9000BEC13 /* CircleLayer.swift */,
 				7C5DC8EC1D7176EC000BEC13 /* AnimationSliderMenuViewController.swift */,
 				7C5DC8EF1D717D63000BEC13 /* YNTSlideMenu.swift */,
+				7C6E84941D75626A00D75094 /* YNTDragglableViewController.swift */,
+				7C6E84961D75A95500D75094 /* YNTDraggableView.swift */,
+				7C8C3E541D772C2000814075 /* YNTLiquidLoaderViewController.swift */,
+				7C8C3E561D772C2E00814075 /* YNTLiquidLoaderView.swift */,
 				7C5DC8E81D7133F7000BEC13 /* AnimationCircleView.storyboard */,
 			);
 			name = "A GUIDE TO IOS ANIMATION";
@@ -780,6 +795,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C8C3E531D7724E800814075 /* cute-explode@2x.png in Resources */,
 				7CA41DE71C90044F00F61B82 /* head.png in Resources */,
 				7CDF01B81C96548500227ED0 /* WebView.storyboard in Resources */,
 				7CB422611CD8B0590043D9AE /* QuickLook.storyboard in Resources */,
@@ -954,14 +970,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C6E84971D75A95500D75094 /* YNTDraggableView.swift in Sources */,
 				7CCF4F891CC780E000D0F6FB /* DataViewController.swift in Sources */,
 				7CB4225F1CD8B04F0043D9AE /* QuickLookViewController.swift in Sources */,
+				7C8C3E571D772C2E00814075 /* YNTLiquidLoaderView.swift in Sources */,
 				7C5DC8F01D717D63000BEC13 /* YNTSlideMenu.swift in Sources */,
 				7C1AF9781C9275D0001542A5 /* YnotPlayerView.swift in Sources */,
 				7C1E567E1CC8634F00336C12 /* TiledPDFView.swift in Sources */,
 				7CCF4F8D1CC78AA500D0F6FB /* PDFScrollView.swift in Sources */,
 				7CDF01E31C969BAD00227ED0 /* RealmObject.swift in Sources */,
 				7CA41DE31C8FD3D800F61B82 /* YnotModel.swift in Sources */,
+				7C8C3E551D772C2000814075 /* YNTLiquidLoaderViewController.swift in Sources */,
 				7C83C6E71C914E4C0013FC4B /* PresentingViewController.swift in Sources */,
 				7C1AB2B51C7C8E7800E974D9 /* QueueViewController.swift in Sources */,
 				7C357FB41D5A27C400872657 /* DocumentViewController.swift in Sources */,
@@ -989,6 +1008,7 @@
 				7CB080951C71B74700095B87 /* TransitionSecondViewController.swift in Sources */,
 				7C74073F1CD8A453004A62F1 /* FPSLabel.swift in Sources */,
 				7CA41DEE1C90103000F61B82 /* SecondCell.swift in Sources */,
+				7C6E84951D75626A00D75094 /* YNTDragglableViewController.swift in Sources */,
 				7CA41DF01C90104200F61B82 /* FitstModel.swift in Sources */,
 				7CDF01B61C9652BB00227ED0 /* WebViewController.swift in Sources */,
 				7C83C6E91C914E570013FC4B /* PresentedViewController.swift in Sources */,
