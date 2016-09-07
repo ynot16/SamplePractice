@@ -10,26 +10,21 @@ import UIKit
 
 class YNTLiquidLoaderViewController: UIViewController {
 
+    lazy var fpsLabel: FPSLabel = {
+        let fpsLabel = FPSLabel()
+        return fpsLabel
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        view.addSubview(fpsLabel)
+        
+        let loadingView = YNTLiquidLoaderView(frame: CGRectMake(0, 0, 200, 60))
+        loadingView.center = view.center
+        loadingView.backgroundColor = UIColor.lightGrayColor()
+        loadingView.alpha = 0.5
+        view.addSubview(loadingView)
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

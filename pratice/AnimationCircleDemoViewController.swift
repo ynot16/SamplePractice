@@ -28,5 +28,6 @@ class AnimationCircleDemoViewController: UIViewController {
     @IBAction func sliderValueChanged(sender: AnyObject) {
         progressLabel.text = "Current Progress: \(sliderView.value)"
         circleLayer.progress = CGFloat(sliderView.value)
+        
     }
 }

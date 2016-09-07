@@ -169,6 +169,3 @@ class YNTDraggableView: UIView {
     }
 }
 
-extension YNTDraggableView {
-    
-}

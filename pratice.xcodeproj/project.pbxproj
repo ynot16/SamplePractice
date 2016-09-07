@@ -48,6 +48,7 @@
 		7C357FB61D5A27D200872657 /* Document.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C357FB51D5A27D200872657 /* Document.storyboard */; };
 		7C357FB91D5A2D4500872657 /* docu.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C357FB71D5A2D4500872657 /* docu.png */; };
 		7C357FBA1D5A2D4500872657 /* docu2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C357FB81D5A2D4500872657 /* docu2.png */; };
+		7C3C9ADE1D7EFA9F007DBDE8 /* YNTLoaderEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3C9ADD1D7EFA9F007DBDE8 /* YNTLoaderEngine.swift */; };
 		7C4E2DEF1C7C342A00F38BFF /* SocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4E2DEE1C7C342A00F38BFF /* SocketViewController.swift */; };
 		7C4F323B1CD1A35B00EC8553 /* AnimationImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4F323A1CD1A35B00EC8553 /* AnimationImageViewController.swift */; };
 		7C5DC8E71D712AA2000BEC13 /* AnimationCircleDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DC8E61D712AA2000BEC13 /* AnimationCircleDemoViewController.swift */; };
@@ -127,6 +128,7 @@
 		7C8C3E531D7724E800814075 /* cute-explode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8C3E521D7724E800814075 /* cute-explode@2x.png */; };
 		7C8C3E551D772C2000814075 /* YNTLiquidLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8C3E541D772C2000814075 /* YNTLiquidLoaderViewController.swift */; };
 		7C8C3E571D772C2E00814075 /* YNTLiquidLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8C3E561D772C2E00814075 /* YNTLiquidLoaderView.swift */; };
+		7C8C3E631D7878EC00814075 /* YNTCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8C3E621D7878EC00814075 /* YNTCircle.swift */; };
 		7CA41DDE1C8FCC0D00F61B82 /* TableViewEmbledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA41DDD1C8FCC0D00F61B82 /* TableViewEmbledViewController.swift */; };
 		7CA41DE01C8FCC5700F61B82 /* TableViewEmbled.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA41DDF1C8FCC5700F61B82 /* TableViewEmbled.storyboard */; };
 		7CA41DE31C8FD3D800F61B82 /* YnotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA41DE21C8FD3D800F61B82 /* YnotModel.swift */; };
@@ -249,6 +251,7 @@
 		7C357FB51D5A27D200872657 /* Document.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Document.storyboard; sourceTree = "<group>"; };
 		7C357FB71D5A2D4500872657 /* docu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = docu.png; sourceTree = "<group>"; };
 		7C357FB81D5A2D4500872657 /* docu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = docu2.png; sourceTree = "<group>"; };
+		7C3C9ADD1D7EFA9F007DBDE8 /* YNTLoaderEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTLoaderEngine.swift; sourceTree = "<group>"; };
 		7C4E2DEE1C7C342A00F38BFF /* SocketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketViewController.swift; sourceTree = "<group>"; };
 		7C4F323A1CD1A35B00EC8553 /* AnimationImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationImageViewController.swift; sourceTree = "<group>"; };
 		7C5DC8E61D712AA2000BEC13 /* AnimationCircleDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationCircleDemoViewController.swift; sourceTree = "<group>"; };
@@ -271,6 +274,7 @@
 		7C8C3E521D7724E800814075 /* cute-explode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cute-explode@2x.png"; sourceTree = "<group>"; };
 		7C8C3E541D772C2000814075 /* YNTLiquidLoaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTLiquidLoaderViewController.swift; sourceTree = "<group>"; };
 		7C8C3E561D772C2E00814075 /* YNTLiquidLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTLiquidLoaderView.swift; sourceTree = "<group>"; };
+		7C8C3E621D7878EC00814075 /* YNTCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTCircle.swift; sourceTree = "<group>"; };
 		7CA41DDD1C8FCC0D00F61B82 /* TableViewEmbledViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewEmbledViewController.swift; sourceTree = "<group>"; };
 		7CA41DDF1C8FCC5700F61B82 /* TableViewEmbled.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TableViewEmbled.storyboard; sourceTree = "<group>"; };
 		7CA41DE21C8FD3D800F61B82 /* YnotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YnotModel.swift; sourceTree = "<group>"; };
@@ -510,6 +514,8 @@
 				7C6E84961D75A95500D75094 /* YNTDraggableView.swift */,
 				7C8C3E541D772C2000814075 /* YNTLiquidLoaderViewController.swift */,
 				7C8C3E561D772C2E00814075 /* YNTLiquidLoaderView.swift */,
+				7C3C9ADD1D7EFA9F007DBDE8 /* YNTLoaderEngine.swift */,
+				7C8C3E621D7878EC00814075 /* YNTCircle.swift */,
 				7C5DC8E81D7133F7000BEC13 /* AnimationCircleView.storyboard */,
 			);
 			name = "A GUIDE TO IOS ANIMATION";
@@ -978,6 +984,7 @@
 				7C1AF9781C9275D0001542A5 /* YnotPlayerView.swift in Sources */,
 				7C1E567E1CC8634F00336C12 /* TiledPDFView.swift in Sources */,
 				7CCF4F8D1CC78AA500D0F6FB /* PDFScrollView.swift in Sources */,
+				7C3C9ADE1D7EFA9F007DBDE8 /* YNTLoaderEngine.swift in Sources */,
 				7CDF01E31C969BAD00227ED0 /* RealmObject.swift in Sources */,
 				7CA41DE31C8FD3D800F61B82 /* YnotModel.swift in Sources */,
 				7C8C3E551D772C2000814075 /* YNTLiquidLoaderViewController.swift in Sources */,
@@ -1017,6 +1024,7 @@
 				7C83C6E21C914A0C0013FC4B /* Protocol.swift in Sources */,
 				7CA41DEC1C90102700F61B82 /* FirstCell.swift in Sources */,
 				7C16E1911CABD55F0060EAF8 /* SearchViewController.swift in Sources */,
+				7C8C3E631D7878EC00814075 /* YNTCircle.swift in Sources */,
 				7C2705F21CA37D720071947F /* YnotTestView.swift in Sources */,
 				7C4E2DEF1C7C342A00F38BFF /* SocketViewController.swift in Sources */,
 				7C5DC8EB1D7134E9000BEC13 /* CircleLayer.swift in Sources */,
