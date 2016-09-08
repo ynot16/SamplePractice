@@ -139,6 +139,11 @@
 		7CA41DEE1C90103000F61B82 /* SecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA41DED1C90103000F61B82 /* SecondCell.swift */; };
 		7CA41DF01C90104200F61B82 /* FitstModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA41DEF1C90104200F61B82 /* FitstModel.swift */; };
 		7CA41DF21C90104B00F61B82 /* SecondModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA41DF11C90104B00F61B82 /* SecondModel.swift */; };
+		7CA68F6C1D803A1A00EBB434 /* YNTTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA68F6B1D803A1A00EBB434 /* YNTTransitionViewController.swift */; };
+		7CA68F6E1D803B3F00EBB434 /* YNTTransitionSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA68F6D1D803B3F00EBB434 /* YNTTransitionSecondViewController.swift */; };
+		7CA68F701D803B5300EBB434 /* YNTTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA68F6F1D803B5300EBB434 /* YNTTransitionAnimator.swift */; };
+		7CA68F721D804C7900EBB434 /* YNTPingInvertTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA68F711D804C7900EBB434 /* YNTPingInvertTransition.swift */; };
+		7CA68F791D805C8D00EBB434 /* YNTJumpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA68F781D805C8D00EBB434 /* YNTJumpViewController.swift */; };
 		7CB080901C71AF9E00095B87 /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB0808F1C71AF9E00095B87 /* TransitionViewController.swift */; };
 		7CB080921C71AFD900095B87 /* Transition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB080911C71AFD900095B87 /* Transition.storyboard */; };
 		7CB080951C71B74700095B87 /* TransitionSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB080941C71B74700095B87 /* TransitionSecondViewController.swift */; };
@@ -285,6 +290,11 @@
 		7CA41DED1C90103000F61B82 /* SecondCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondCell.swift; sourceTree = "<group>"; };
 		7CA41DEF1C90104200F61B82 /* FitstModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitstModel.swift; sourceTree = "<group>"; };
 		7CA41DF11C90104B00F61B82 /* SecondModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondModel.swift; sourceTree = "<group>"; };
+		7CA68F6B1D803A1A00EBB434 /* YNTTransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTTransitionViewController.swift; sourceTree = "<group>"; };
+		7CA68F6D1D803B3F00EBB434 /* YNTTransitionSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTTransitionSecondViewController.swift; sourceTree = "<group>"; };
+		7CA68F6F1D803B5300EBB434 /* YNTTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTTransitionAnimator.swift; sourceTree = "<group>"; };
+		7CA68F711D804C7900EBB434 /* YNTPingInvertTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTPingInvertTransition.swift; sourceTree = "<group>"; };
+		7CA68F781D805C8D00EBB434 /* YNTJumpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTJumpViewController.swift; sourceTree = "<group>"; };
 		7CB0808F1C71AF9E00095B87 /* TransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
 		7CB080911C71AFD900095B87 /* Transition.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transition.storyboard; sourceTree = "<group>"; };
 		7CB080941C71B74700095B87 /* TransitionSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSecondViewController.swift; sourceTree = "<group>"; };
@@ -506,16 +516,12 @@
 			isa = PBXGroup;
 			children = (
 				7C8C3E521D7724E800814075 /* cute-explode@2x.png */,
-				7C5DC8E61D712AA2000BEC13 /* AnimationCircleDemoViewController.swift */,
-				7C5DC8EA1D7134E9000BEC13 /* CircleLayer.swift */,
-				7C5DC8EC1D7176EC000BEC13 /* AnimationSliderMenuViewController.swift */,
-				7C5DC8EF1D717D63000BEC13 /* YNTSlideMenu.swift */,
-				7C6E84941D75626A00D75094 /* YNTDragglableViewController.swift */,
-				7C6E84961D75A95500D75094 /* YNTDraggableView.swift */,
-				7C8C3E541D772C2000814075 /* YNTLiquidLoaderViewController.swift */,
-				7C8C3E561D772C2E00814075 /* YNTLiquidLoaderView.swift */,
-				7C3C9ADD1D7EFA9F007DBDE8 /* YNTLoaderEngine.swift */,
-				7C8C3E621D7878EC00814075 /* YNTCircle.swift */,
+				7CA68F771D805C6A00EBB434 /* AnimatingCircle */,
+				7CA68F761D805C5C00EBB434 /* BouncingSideMenu */,
+				7CA68F751D805C4E00EBB434 /* DraggableView */,
+				7CA68F741D805C4000EBB434 /* LiquidLoader */,
+				7CA68F731D805C3400EBB434 /* Transition */,
+				7CA68F781D805C8D00EBB434 /* YNTJumpViewController.swift */,
 				7C5DC8E81D7133F7000BEC13 /* AnimationCircleView.storyboard */,
 			);
 			name = "A GUIDE TO IOS ANIMATION";
@@ -566,6 +572,55 @@
 				7CA41DE41C8FD3EC00F61B82 /* YnotCell.swift */,
 			);
 			name = AutoCell;
+			sourceTree = "<group>";
+		};
+		7CA68F731D805C3400EBB434 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				7CA68F6B1D803A1A00EBB434 /* YNTTransitionViewController.swift */,
+				7CA68F6D1D803B3F00EBB434 /* YNTTransitionSecondViewController.swift */,
+				7CA68F6F1D803B5300EBB434 /* YNTTransitionAnimator.swift */,
+				7CA68F711D804C7900EBB434 /* YNTPingInvertTransition.swift */,
+			);
+			name = Transition;
+			sourceTree = "<group>";
+		};
+		7CA68F741D805C4000EBB434 /* LiquidLoader */ = {
+			isa = PBXGroup;
+			children = (
+				7C8C3E541D772C2000814075 /* YNTLiquidLoaderViewController.swift */,
+				7C8C3E561D772C2E00814075 /* YNTLiquidLoaderView.swift */,
+				7C3C9ADD1D7EFA9F007DBDE8 /* YNTLoaderEngine.swift */,
+				7C8C3E621D7878EC00814075 /* YNTCircle.swift */,
+			);
+			name = LiquidLoader;
+			sourceTree = "<group>";
+		};
+		7CA68F751D805C4E00EBB434 /* DraggableView */ = {
+			isa = PBXGroup;
+			children = (
+				7C6E84941D75626A00D75094 /* YNTDragglableViewController.swift */,
+				7C6E84961D75A95500D75094 /* YNTDraggableView.swift */,
+			);
+			name = DraggableView;
+			sourceTree = "<group>";
+		};
+		7CA68F761D805C5C00EBB434 /* BouncingSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				7C5DC8EC1D7176EC000BEC13 /* AnimationSliderMenuViewController.swift */,
+				7C5DC8EF1D717D63000BEC13 /* YNTSlideMenu.swift */,
+			);
+			name = BouncingSideMenu;
+			sourceTree = "<group>";
+		};
+		7CA68F771D805C6A00EBB434 /* AnimatingCircle */ = {
+			isa = PBXGroup;
+			children = (
+				7C5DC8E61D712AA2000BEC13 /* AnimationCircleDemoViewController.swift */,
+				7C5DC8EA1D7134E9000BEC13 /* CircleLayer.swift */,
+			);
+			name = AnimatingCircle;
 			sourceTree = "<group>";
 		};
 		7CB080931C71AFDF00095B87 /* Transition */ = {
@@ -979,6 +1034,7 @@
 				7C6E84971D75A95500D75094 /* YNTDraggableView.swift in Sources */,
 				7CCF4F891CC780E000D0F6FB /* DataViewController.swift in Sources */,
 				7CB4225F1CD8B04F0043D9AE /* QuickLookViewController.swift in Sources */,
+				7CA68F701D803B5300EBB434 /* YNTTransitionAnimator.swift in Sources */,
 				7C8C3E571D772C2E00814075 /* YNTLiquidLoaderView.swift in Sources */,
 				7C5DC8F01D717D63000BEC13 /* YNTSlideMenu.swift in Sources */,
 				7C1AF9781C9275D0001542A5 /* YnotPlayerView.swift in Sources */,
@@ -1001,6 +1057,7 @@
 				7CA41DF21C90104B00F61B82 /* SecondModel.swift in Sources */,
 				7C1AF9771C9275D0001542A5 /* YnotPlayerMaskView.swift in Sources */,
 				7C15F3D41C97B006005EAA61 /* LayoutViewController.swift in Sources */,
+				7CA68F721D804C7900EBB434 /* YNTPingInvertTransition.swift in Sources */,
 				7C330DE31C84175900C019CD /* MainViewController.swift in Sources */,
 				7C1555531C5CB7920048B1FF /* URLSessionViewController.swift in Sources */,
 				7CB080901C71AF9E00095B87 /* TransitionViewController.swift in Sources */,
@@ -1019,13 +1076,16 @@
 				7CA41DF01C90104200F61B82 /* FitstModel.swift in Sources */,
 				7CDF01B61C9652BB00227ED0 /* WebViewController.swift in Sources */,
 				7C83C6E91C914E570013FC4B /* PresentedViewController.swift in Sources */,
+				7CA68F6E1D803B3F00EBB434 /* YNTTransitionSecondViewController.swift in Sources */,
 				7C1AEF151C7ED36800190047 /* YnotDownloadManager.swift in Sources */,
 				7C5DC8E71D712AA2000BEC13 /* AnimationCircleDemoViewController.swift in Sources */,
 				7C83C6E21C914A0C0013FC4B /* Protocol.swift in Sources */,
 				7CA41DEC1C90102700F61B82 /* FirstCell.swift in Sources */,
+				7CA68F6C1D803A1A00EBB434 /* YNTTransitionViewController.swift in Sources */,
 				7C16E1911CABD55F0060EAF8 /* SearchViewController.swift in Sources */,
 				7C8C3E631D7878EC00814075 /* YNTCircle.swift in Sources */,
 				7C2705F21CA37D720071947F /* YnotTestView.swift in Sources */,
+				7CA68F791D805C8D00EBB434 /* YNTJumpViewController.swift in Sources */,
 				7C4E2DEF1C7C342A00F38BFF /* SocketViewController.swift in Sources */,
 				7C5DC8EB1D7134E9000BEC13 /* CircleLayer.swift in Sources */,
 				7C091CA81BCC0653003FCC8F /* AppDelegate.swift in Sources */,
