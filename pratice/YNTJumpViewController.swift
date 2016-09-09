@@ -25,7 +25,7 @@ class YNTJumpViewController: UIViewController {
     }
     
     
-    private var downloadButton: UIButton!
+    private var downloadButton: YNTDownloadButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,33 +40,13 @@ class YNTJumpViewController: UIViewController {
     // MARK: DownloadView Demo
     
     func setupDownloadView() {
-        downloadButton = UIButton(frame: CGRectMake(view.center.x - 35, 100, 70, 70))
+        downloadButton = YNTDownloadButton(frame: CGRectMake(view.center.x - 50, 100, 100, 100))
         downloadButton.backgroundColor = UIColor.blueColor()
-        downloadButton.addTarget(self, action: #selector(downloadAction), forControlEvents: .TouchUpInside)
-        downloadButton.layer.cornerRadius = 35
+        downloadButton.layer.cornerRadius = 50
         downloadButton.layer.masksToBounds = true
         view.addSubview(downloadButton)
     }
     
-    func downloadAction(sender: UIButton) {
-        let animationBounds = CABasicAnimation(keyPath: "bounds")
-        animationBounds.fromValue = NSValue(CGRect: CGRectMake(0, 0, 70, 70))
-        animationBounds.toValue = NSValue(CGRect: CGRectMake(0, 0, 250, 40))
-        animationBounds.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
-        
-        let animationRadious = CABasicAnimation(keyPath: "cornerRadius")
-        animationRadious.fromValue = 20
-        animationRadious.toValue = 20
-        animationRadious.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
-        
-        let animationGroup = CAAnimationGroup()
-        animationGroup.duration = 0.2
-        animationGroup.fillMode = kCAFillModeForwards
-        animationGroup.removedOnCompletion = false
-        animationGroup.animations = [animationBounds, animationRadious]
-        downloadButton.layer.addAnimation(animationGroup, forKey: "downloading")
-        
-    }
     
     
     // MARK: Jump Star Demo

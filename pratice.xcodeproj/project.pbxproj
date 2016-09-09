@@ -144,6 +144,7 @@
 		7CA68F701D803B5300EBB434 /* YNTTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA68F6F1D803B5300EBB434 /* YNTTransitionAnimator.swift */; };
 		7CA68F721D804C7900EBB434 /* YNTPingInvertTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA68F711D804C7900EBB434 /* YNTPingInvertTransition.swift */; };
 		7CA68F791D805C8D00EBB434 /* YNTJumpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA68F781D805C8D00EBB434 /* YNTJumpViewController.swift */; };
+		7CA68F801D8196E800EBB434 /* YNTDownloadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA68F7F1D8196E800EBB434 /* YNTDownloadButton.swift */; };
 		7CB080901C71AF9E00095B87 /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB0808F1C71AF9E00095B87 /* TransitionViewController.swift */; };
 		7CB080921C71AFD900095B87 /* Transition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB080911C71AFD900095B87 /* Transition.storyboard */; };
 		7CB080951C71B74700095B87 /* TransitionSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB080941C71B74700095B87 /* TransitionSecondViewController.swift */; };
@@ -295,6 +296,7 @@
 		7CA68F6F1D803B5300EBB434 /* YNTTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTTransitionAnimator.swift; sourceTree = "<group>"; };
 		7CA68F711D804C7900EBB434 /* YNTPingInvertTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTPingInvertTransition.swift; sourceTree = "<group>"; };
 		7CA68F781D805C8D00EBB434 /* YNTJumpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTJumpViewController.swift; sourceTree = "<group>"; };
+		7CA68F7F1D8196E800EBB434 /* YNTDownloadButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTDownloadButton.swift; sourceTree = "<group>"; };
 		7CB0808F1C71AF9E00095B87 /* TransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
 		7CB080911C71AFD900095B87 /* Transition.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transition.storyboard; sourceTree = "<group>"; };
 		7CB080941C71B74700095B87 /* TransitionSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSecondViewController.swift; sourceTree = "<group>"; };
@@ -521,7 +523,7 @@
 				7CA68F751D805C4E00EBB434 /* DraggableView */,
 				7CA68F741D805C4000EBB434 /* LiquidLoader */,
 				7CA68F731D805C3400EBB434 /* Transition */,
-				7CA68F781D805C8D00EBB434 /* YNTJumpViewController.swift */,
+				7CA68F811D81B63900EBB434 /* DownloadButton */,
 				7C5DC8E81D7133F7000BEC13 /* AnimationCircleView.storyboard */,
 			);
 			name = "A GUIDE TO IOS ANIMATION";
@@ -621,6 +623,15 @@
 				7C5DC8EA1D7134E9000BEC13 /* CircleLayer.swift */,
 			);
 			name = AnimatingCircle;
+			sourceTree = "<group>";
+		};
+		7CA68F811D81B63900EBB434 /* DownloadButton */ = {
+			isa = PBXGroup;
+			children = (
+				7CA68F781D805C8D00EBB434 /* YNTJumpViewController.swift */,
+				7CA68F7F1D8196E800EBB434 /* YNTDownloadButton.swift */,
+			);
+			name = DownloadButton;
 			sourceTree = "<group>";
 		};
 		7CB080931C71AFDF00095B87 /* Transition */ = {
@@ -1074,6 +1085,7 @@
 				7CA41DEE1C90103000F61B82 /* SecondCell.swift in Sources */,
 				7C6E84951D75626A00D75094 /* YNTDragglableViewController.swift in Sources */,
 				7CA41DF01C90104200F61B82 /* FitstModel.swift in Sources */,
+				7CA68F801D8196E800EBB434 /* YNTDownloadButton.swift in Sources */,
 				7CDF01B61C9652BB00227ED0 /* WebViewController.swift in Sources */,
 				7C83C6E91C914E570013FC4B /* PresentedViewController.swift in Sources */,
 				7CA68F6E1D803B3F00EBB434 /* YNTTransitionSecondViewController.swift in Sources */,

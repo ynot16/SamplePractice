@@ -148,7 +148,7 @@ class YNTSlideMenu: UIView {
         print("diff == \(diff)")
         
         let context = UIGraphicsGetCurrentContext()
-        CGContextSetStrokeColorWithColor(context, UIColor.whiteColor().CGColor)
+        CGContextSetStrokeColorWithColor(context, UIColor.redColor().CGColor)
         CGContextAddPath(context, path.CGPath)
         UIColor.blueColor().set()
         CGContextFillPath(context)
