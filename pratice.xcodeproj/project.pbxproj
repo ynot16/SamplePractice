@@ -149,6 +149,8 @@
 		7CB080921C71AFD900095B87 /* Transition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB080911C71AFD900095B87 /* Transition.storyboard */; };
 		7CB080951C71B74700095B87 /* TransitionSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB080941C71B74700095B87 /* TransitionSecondViewController.swift */; };
 		7CB080971C71B93800095B87 /* SpringAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB080961C71B93800095B87 /* SpringAnimator.swift */; };
+		7CB273BA1D86E36A0035DEAA /* YNTInteractiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB273B91D86E36A0035DEAA /* YNTInteractiveViewController.swift */; };
+		7CB273BC1D86E39A0035DEAA /* YNTInteractiImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB273BB1D86E39A0035DEAA /* YNTInteractiImageView.swift */; };
 		7CB4225F1CD8B04F0043D9AE /* QuickLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB4225E1CD8B04F0043D9AE /* QuickLookViewController.swift */; };
 		7CB422611CD8B0590043D9AE /* QuickLook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB422601CD8B0590043D9AE /* QuickLook.storyboard */; };
 		7CCF4F851CC77B1F00D0F6FB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF4F841CC77B1F00D0F6FB /* RootViewController.swift */; };
@@ -301,6 +303,8 @@
 		7CB080911C71AFD900095B87 /* Transition.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transition.storyboard; sourceTree = "<group>"; };
 		7CB080941C71B74700095B87 /* TransitionSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSecondViewController.swift; sourceTree = "<group>"; };
 		7CB080961C71B93800095B87 /* SpringAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimator.swift; sourceTree = "<group>"; };
+		7CB273B91D86E36A0035DEAA /* YNTInteractiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTInteractiveViewController.swift; sourceTree = "<group>"; };
+		7CB273BB1D86E39A0035DEAA /* YNTInteractiImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTInteractiImageView.swift; sourceTree = "<group>"; };
 		7CB4225E1CD8B04F0043D9AE /* QuickLookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickLookViewController.swift; sourceTree = "<group>"; };
 		7CB422601CD8B0590043D9AE /* QuickLook.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuickLook.storyboard; sourceTree = "<group>"; };
 		7CCF4F841CC77B1F00D0F6FB /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -524,6 +528,8 @@
 				7CA68F741D805C4000EBB434 /* LiquidLoader */,
 				7CA68F731D805C3400EBB434 /* Transition */,
 				7CA68F811D81B63900EBB434 /* DownloadButton */,
+				7CB273B91D86E36A0035DEAA /* YNTInteractiveViewController.swift */,
+				7CB273BB1D86E39A0035DEAA /* YNTInteractiImageView.swift */,
 				7C5DC8E81D7133F7000BEC13 /* AnimationCircleView.storyboard */,
 			);
 			name = "A GUIDE TO IOS ANIMATION";
@@ -1060,8 +1066,10 @@
 				7C357FB41D5A27C400872657 /* DocumentViewController.swift in Sources */,
 				7C1AF96D1C927505001542A5 /* YnotPlayerViewController.swift in Sources */,
 				7C4F323B1CD1A35B00EC8553 /* AnimationImageViewController.swift in Sources */,
+				7CB273BC1D86E39A0035DEAA /* YNTInteractiImageView.swift in Sources */,
 				7CA41DDE1C8FCC0D00F61B82 /* TableViewEmbledViewController.swift in Sources */,
 				7C5DC8ED1D7176EC000BEC13 /* AnimationSliderMenuViewController.swift in Sources */,
+				7CB273BA1D86E36A0035DEAA /* YNTInteractiveViewController.swift in Sources */,
 				7CA41DE51C8FD3EC00F61B82 /* YnotCell.swift in Sources */,
 				7CCF4F851CC77B1F00D0F6FB /* RootViewController.swift in Sources */,
 				7C15F3D81C97B704005EAA61 /* TestView.swift in Sources */,
