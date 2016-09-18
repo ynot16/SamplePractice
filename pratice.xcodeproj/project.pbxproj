@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5F30A4D1F0E5FB5BA2536D0F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4DFA74DB710A049C3CF71E /* Pods.framework */; };
+		7C066D331D8EC02500258DCB /* YNTCATipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C066D311D8EC02500258DCB /* YNTCATipViewController.swift */; };
+		7C066D341D8EC02500258DCB /* YNTCATipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C066D321D8EC02500258DCB /* YNTCATipViewController.xib */; };
+		7C066D361D8EC30200258DCB /* YNTCAFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C066D351D8EC30200258DCB /* YNTCAFirstViewController.swift */; };
 		7C091CA81BCC0653003FCC8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C091CA71BCC0653003FCC8F /* AppDelegate.swift */; };
 		7C091CAA1BCC0653003FCC8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C091CA91BCC0653003FCC8F /* ViewController.swift */; };
 		7C091CAD1BCC0653003FCC8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C091CAB1BCC0653003FCC8F /* Main.storyboard */; };
@@ -211,6 +214,9 @@
 /* Begin PBXFileReference section */
 		3266EC63CC62FEF9E118B989 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7B4DFA74DB710A049C3CF71E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C066D311D8EC02500258DCB /* YNTCATipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTCATipViewController.swift; sourceTree = "<group>"; };
+		7C066D321D8EC02500258DCB /* YNTCATipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YNTCATipViewController.xib; sourceTree = "<group>"; };
+		7C066D351D8EC30200258DCB /* YNTCAFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNTCAFirstViewController.swift; sourceTree = "<group>"; };
 		7C091CA41BCC0653003FCC8F /* pratice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pratice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C091CA71BCC0653003FCC8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C091CA91BCC0653003FCC8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -361,6 +367,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C066D2C1D8EBE4800258DCB /* InteractiveImage */ = {
+			isa = PBXGroup;
+			children = (
+				7CB273B91D86E36A0035DEAA /* YNTInteractiveViewController.swift */,
+				7CB273BB1D86E39A0035DEAA /* YNTInteractiImageView.swift */,
+			);
+			name = InteractiveImage;
+			sourceTree = "<group>";
+		};
 		7C091C9B1BCC0653003FCC8F = {
 			isa = PBXGroup;
 			children = (
@@ -528,8 +543,10 @@
 				7CA68F741D805C4000EBB434 /* LiquidLoader */,
 				7CA68F731D805C3400EBB434 /* Transition */,
 				7CA68F811D81B63900EBB434 /* DownloadButton */,
-				7CB273B91D86E36A0035DEAA /* YNTInteractiveViewController.swift */,
-				7CB273BB1D86E39A0035DEAA /* YNTInteractiImageView.swift */,
+				7C066D2C1D8EBE4800258DCB /* InteractiveImage */,
+				7C066D351D8EC30200258DCB /* YNTCAFirstViewController.swift */,
+				7C066D311D8EC02500258DCB /* YNTCATipViewController.swift */,
+				7C066D321D8EC02500258DCB /* YNTCATipViewController.xib */,
 				7C5DC8E81D7133F7000BEC13 /* AnimationCircleView.storyboard */,
 			);
 			name = "A GUIDE TO IOS ANIMATION";
@@ -895,6 +912,7 @@
 				7CA41DE01C8FCC5700F61B82 /* TableViewEmbled.storyboard in Resources */,
 				7C091CAD1BCC0653003FCC8F /* Main.storyboard in Resources */,
 				7C357FB61D5A27D200872657 /* Document.storyboard in Resources */,
+				7C066D341D8EC02500258DCB /* YNTCATipViewController.xib in Resources */,
 				7C1555551C5CB7A60048B1FF /* URLSession.storyboard in Resources */,
 				7C1AF97C1C9275F4001542A5 /* YnotPlayerMaskView.xib in Resources */,
 				7C1AF97E1C9276A5001542A5 /* 150511_JiveBike.mov in Resources */,
@@ -1065,6 +1083,7 @@
 				7C1AB2B51C7C8E7800E974D9 /* QueueViewController.swift in Sources */,
 				7C357FB41D5A27C400872657 /* DocumentViewController.swift in Sources */,
 				7C1AF96D1C927505001542A5 /* YnotPlayerViewController.swift in Sources */,
+				7C066D331D8EC02500258DCB /* YNTCATipViewController.swift in Sources */,
 				7C4F323B1CD1A35B00EC8553 /* AnimationImageViewController.swift in Sources */,
 				7CB273BC1D86E39A0035DEAA /* YNTInteractiImageView.swift in Sources */,
 				7CA41DDE1C8FCC0D00F61B82 /* TableViewEmbledViewController.swift in Sources */,
@@ -1092,6 +1111,7 @@
 				7C74073F1CD8A453004A62F1 /* FPSLabel.swift in Sources */,
 				7CA41DEE1C90103000F61B82 /* SecondCell.swift in Sources */,
 				7C6E84951D75626A00D75094 /* YNTDragglableViewController.swift in Sources */,
+				7C066D361D8EC30200258DCB /* YNTCAFirstViewController.swift in Sources */,
 				7CA41DF01C90104200F61B82 /* FitstModel.swift in Sources */,
 				7CA68F801D8196E800EBB434 /* YNTDownloadButton.swift in Sources */,
 				7CDF01B61C9652BB00227ED0 /* WebViewController.swift in Sources */,

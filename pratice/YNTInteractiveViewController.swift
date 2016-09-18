@@ -15,8 +15,6 @@ class YNTInteractiveViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         var option = InteractiveOptions()
         option.damping = 0.7
         option.duration = 0.5
